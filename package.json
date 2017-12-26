@@ -1,0 +1,29 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "constructor",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neyia/catalog.git"
+  },
+  "author": "neyia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neyia/catalog/issues"
+  },
+  "homepage": "https://github.com/neyia/catalog#readme",
+  "devDependencies": {
+    "browser-sync": "^2.21.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-less": "^3.4.0",
+    "gulp-processhtml": "^1.1.0",
+    "gulp-watch": "^4.3.11",
+    "path": "^0.12.7",
+    "watch": "^1.0.2"
+  }
+}
