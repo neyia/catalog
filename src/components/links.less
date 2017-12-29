@@ -1,0 +1,92 @@
+/**
+ * --------------------------------
+ * Links styles
+ * --------------------------------
+*/
+@import "src/components/variables";
+
+.link {
+    transition:      all 0.1s ease-out;
+    text-decoration: none;
+    
+    &--disabled {
+        opacity: 0.3;
+    }
+}
+
+.link-primary {
+    color:  @primary;
+    cursor: pointer;
+    
+    &:hover,
+    &:focus {
+        color:           @primary--hover;
+        text-decoration: underline;
+    }
+    &:active {
+        color:           @primary--active;
+        text-decoration: underline;
+    }
+    
+    &--disabled {
+        color:           @primary;
+        text-decoration: none;
+        opacity:         0.3;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            opacity:         0.3;
+            color:           @primary;
+            text-decoration: none;
+        }
+    }
+}
+
+.link-secondary {
+    color: @secondary;
+    
+    &:hover,
+    &:focus {
+        color:           @secondary--hover;
+        text-decoration: underline;
+    }
+    &:active {
+        color:           @secondary--active;
+        text-decoration: underline;
+    }
+    &--disabled {
+        opacity:         0.3;
+        text-decoration: none;
+        &:hover,
+        &:focus,
+        &:active {
+            color:           @secondary;
+            text-decoration: none;
+        }
+    }
+}
+
+.link-secondary-light {
+    color: @secondary-light;
+    
+    &:hover,
+    &:focus {
+        color:           @secondary-light--hover;
+        text-decoration: underline;
+    }
+    &:active {
+        color:           @secondary-light--active;
+        text-decoration: underline;
+    }
+    &--disabled {
+        opacity:         0.3;
+        text-decoration: none;
+        &:hover,
+        &:focus,
+        &:active {
+            color:           @secondary-light;
+            text-decoration: none;
+        }
+    }
+}

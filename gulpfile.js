@@ -1,4 +1,3 @@
-
 var gulp = require('gulp');
 var processhtml = require('gulp-processhtml');
 var browserSync = require('browser-sync');
@@ -67,13 +66,13 @@ gulp.task('js', function () {
         .pipe(reload({stream: true}));
 });
 gulp.task('watch', ['webserver'], function () {
-    watch('*.html', function (event, cb) {
+    watch('src/*.html', function (event, cb) {
         gulp.start('html');
     });
-    watch(['styles.less'], function (event, cb) {
+    watch(['src/components/*.less'], function (event, cb) {
         gulp.start('less');
     });
-    watch(['banner.js'], function (event, cb) {
+    watch(['src/scripts/banner.js'], function (event, cb) {
         gulp.start('js');
     });
 });

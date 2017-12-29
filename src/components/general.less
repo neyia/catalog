@@ -1,0 +1,41 @@
+/**
+ * --------------------------------
+ * General styles
+ * --------------------------------
+*/
+@import "src/components/variables";
+
+html {
+    font-size:  16px;
+    height:     100%;
+    min-height: @big_mobile;
+}
+
+body {
+    font-family: "Open Sans", "Courier New", Courier, monospace;
+    color:       @secondary;
+    overflow-x:  hidden;
+    font-style:  normal;
+    font-size:   100%;
+    height:      100%;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+html {
+    @media only screen  and(max-width: (@tablet)) {
+        font-size: 15px;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.section{
+    padding-bottom: @padding;
+}

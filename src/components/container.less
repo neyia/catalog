@@ -1,0 +1,31 @@
+/**
+ * --------------------------------
+ * Container styles
+ * --------------------------------
+*/
+@import "src/components/variables";
+
+.container {
+    box-sizing: border-box;
+    min-width:  @min_width;
+    position:   relative;
+    max-width:  @width;
+    margin:     0 auto;
+    height:     inherit;
+    
+    @media only screen  and(max-width: (@desktop)) {
+        padding: 0 @infelicity/2;
+    }
+    
+    &--flex {
+        justify-content: space-between;
+        align-items:     center;
+        display:         flex;
+    }
+}
+
+.footer {
+    .container--flex {
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,90 @@
+/**
+ * --------------------------------
+ * Btns styles
+ * --------------------------------
+*/
+@import "src/components/variables";
+
+.btn-block {
+    display: flex;
+    padding: 10px @padding;
+}
+
+.btn {
+    transition:         all 0.1s ease-out;
+    border:             1px solid transparent;
+    background-color:   transparent;
+    padding:            5px 10px;
+    cursor:             pointer;
+    -webkit-appearance: none;
+    text-decoration:    none;
+    
+    &--disabled {
+        opacity: 0.3;
+    }
+}
+
+.btn-primary {
+    color:  @primary;
+    border: 1px solid @primary;
+    
+    &:hover,
+    &:focus {
+        background-color: @primary--hover;
+        border:           1px solid @primary--hover;
+        color:            #ffffff;
+    }
+    &:active {
+        background-color: @primary--active;
+        border:           1px solid @primary--active;
+        color:            #ffffff;
+    }
+    
+    &--disabled {
+        color:   @primary;
+        opacity: 0.3;
+        cursor:  default;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: transparent;
+            color:            @primary;
+            opacity:          0.3;
+            cursor:           default;
+        }
+    }
+}
+
+.btn-secondary {
+    color:  @secondary;
+    border: 1px solid @secondary;
+    
+    &:hover,
+    &:focus {
+        background-color: @secondary--hover;
+        border:           1px solid @secondary--hover;
+        color:            #ffffff;
+    }
+    
+    &:active {
+        background-color: @secondary--active;
+        border:           1px solid @secondary--active;
+        color:            #ffffff;
+    }
+    
+    &--disabled {
+        color:   @secondary;
+        opacity: 0.3;
+        cursor:  default;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: @secondary;
+            border:           1px solid @secondary;
+            color:            #ffffff;
+        }
+    }
+}
+

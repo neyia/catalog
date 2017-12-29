@@ -1,0 +1,64 @@
+/**
+ * --------------------------------
+ * Container styles
+ * --------------------------------
+*/
+@import "src/components/variables";
+
+.menu {
+    
+    &__list {
+        display: flex;
+    }
+    
+    &__item {
+    }
+    
+    &__link {
+        padding:    0 1rem;
+        display:    inline-block;
+        box-sizing: border-box;
+        position:   relative;
+    }
+    
+    @media only screen  and(max-width: (@big_mobile)) {
+        display: none;
+    }
+}
+
+
+.menu--footer {
+    .menu__list {
+        justify-content: space-between;
+    }
+    
+    .menu__item {
+    }
+    
+    .menu__item-subscribe {
+        margin:            0 0.08rem 0 0.08rem;
+        display:           inline-block;
+        background-repeat: no-repeat;
+        position:          relative;
+        background-size:   contain;
+        height:            30px;
+        width:             30px;
+    }
+    
+    .menu__item-subscribe--rss {
+        background-image: url(../images/rss.svg);
+    }
+    
+    .menu__item-subscribe--vk {
+        background-image: url(../images/vk.svg);
+    }
+    
+    .menu__item-subscribe--in {
+        background-image: url(../images/instagram.svg);
+    }
+    
+    .menu__item-subscribe--tw {
+        background-image: url(../images/twitter.svg);
+    }
+    
+}

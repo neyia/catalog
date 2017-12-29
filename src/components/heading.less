@@ -1,0 +1,48 @@
+/**
+ * --------------------------------
+ * Heading styles
+ * --------------------------------
+*/
+@import "src/components/variables";
+
+.heading {
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin:      0 0 @infelicity 0;
+    color:       @dark1;
+    font-weight: 600;
+}
+
+.heading-h1 {
+    font-size:   @headingH1;
+    line-height: 1.4;
+    
+    @media only screen  and(max-width: (@tablet)) {
+        font-size:     @headingH1/1.4;
+        line-height:   normal;
+        margin-bottom: @infelicity/2;
+    }
+}
+
+.heading-h2 {
+    font-size:   @headingH2;
+    line-height: 1.2;
+    
+    @media only screen  and(max-width: (@tablet)) {
+        font-size:     @headingH2/1.4;
+        line-height:   normal;
+        margin-bottom: @infelicity/2.2;
+    }
+}
+
+.heading-h3 {
+    font-size:   @headingH3;
+    line-height: 1.1;
+    
+    @media only screen  and(max-width: (@tablet)) {
+        font-size:     @headingH3/1.1;
+        line-height:   normal;
+        margin-bottom: @infelicity/2.2;
+    }
+}
+
+
